@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# 🧠 SmartHealth AI – Disease Prediction System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An AI-powered web application that predicts possible diseases based on user-selected symptoms using Machine Learning.
 
-## Available Scripts
+## 🚀 Features
+* 🧍 **User inputs age & gender**
+* 🧠 **Symptom-based disease prediction**
+* 📊 **Confidence score for predictions**
+* ⚡ **Fast API using Flask**
+* 💻 **Interactive frontend built with React**
+* 🗂 **Scalable architecture (MERN + ML)**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📸 Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Homepage & Patient Details
+![Homepage](assets/home.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Symptom Selection (List & Body Map)
+![Symptom List](assets/symtoms1.png)
+![Body Map](assets/symptoms2.png)
 
-### `npm test`
+### 3. AI Diagnosis Results
+![Prediction](assets/prediction.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Comprehensive Disease Details
+![Disease Details](assets/disease_details.jpg)
 
-### `npm run build`
+### 5. Personalized Precautions & Treatment
+![Precautions](assets/precautions.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏗️ Tech Stack
+* **Frontend:** React.js
+* **Backend:** Flask (Python)
+* **Machine Learning:** Scikit-learn, Stacking/Ensemble Models
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1️⃣ Clone Repository
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2️⃣ Backend Setup (Flask)
+Navigate to the backend folder:
+    cd backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create a virtual environment:
+[Windows]
+    python -m venv venv
+    venv\Scripts\activate
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Mac/Linux]
+    python3 -m venv venv
+    source venv/bin/activate
 
-## Learn More
+Install required Python packages:
+    pip install flask flask-cors scikit-learn numpy joblib
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the backend server:
+    python app.py
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+(Backend will run on: http://127.0.0.1:5000)
 
-### Code Splitting
+### 3️⃣ Frontend Setup (React)
+Open a new terminal and navigate to the frontend folder:
+    cd frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install dependencies:
+    npm install
 
-### Analyzing the Bundle Size
+Start the React development server:
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+(Frontend will run on: http://localhost:3000)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 4️⃣ How to Use
+1. Open the frontend in your browser (http://localhost:3000).
+2. Enter your age and gender on the homepage.
+3. Select symptoms by clicking on the body map.
+4. Submit to see predicted diseases with a confidence score.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 5️⃣ Notes
+* ⚠️ Make sure the backend is running before using the frontend.
+* 📁 Keep your .pkl model files inside the backend folder.
+* 🖼️ Make sure to place your UI images in an `assets` folder in the root directory so the screenshots show up!
+* 🐛 If using Windows and getting errors, check that your virtual environment is properly activated.
