@@ -25,10 +25,10 @@ An AI-powered web application that predicts possible diseases based on user-sele
 ![Prediction](assets/prediction.png)
 
 ### 4. Comprehensive Disease Details
-![Disease Details](assets/disease_details.jpg)
+![Disease Details](assets/disease_details.png)
 
 ### 5. Personalized Precautions & Treatment
-![Precautions](assets/precautions.jpg)
+![Precautions](assets/precautions.png)
 
 ---
 
